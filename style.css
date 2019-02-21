@@ -58,7 +58,7 @@ display: inline-block;
 #index .banner {
     
     background-image:
-    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://whytejas.github.io/hero-img.png");
+    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/hero-img.png");
       background-color: white;
      height: 100%;
     width: 480px;
@@ -70,7 +70,7 @@ display: inline-block;
 #books .banner {
     
     background-image:
-    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://whytejas.github.io/books.png");
+    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/books.png");
      background-color: white;
     height: 100%;
     width: 480px;
