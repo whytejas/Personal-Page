@@ -8,7 +8,7 @@ body {
  
 font-family: Helvetica; 
 
-    font-size: 1em; 
+    font-size: 1.5em; 
     text-align: center;
   padding: 0;
   margin: 0;
@@ -138,7 +138,7 @@ a:hover {
 
 
 footer {
-    font-size: 0.9em; 
+    font-size: 1.5em; 
     color: grey;
     text-align: center;
     bottom: 0;
