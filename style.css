@@ -6,9 +6,9 @@ body {
 
 .navigation {
  
-font-family: Helvetica; 
+font-family: 'niramit'; 
 
-    font-size: 1.5em; 
+    font-size: 1.5rem; 
     text-align: center;
   padding: 0;
   margin: 0;
@@ -54,30 +54,47 @@ display: inline-block;
     text-shadow: none;
 }
 
-.banner {
+
+#index .banner {
     
-   text-align: center;
-background-image:
-    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://whytejas.github.io/hero-img.png");
-     
-   
-     background-position: center;
-  background-repeat: repeat-x;
-  background-size: contain;
-height: 200%;
-    
-  position: relative;
-padding: 250px;
-    
-      
+    background-image:
+    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/hero-img.png");
+      background-color: white;
+     height: 100%;
+    width: 480px;
+    padding-bottom: 200px; 
+    padding-top: 200px;
 }
+
+
+#books .banner {
+    
+    background-image:
+    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/books.png");
+     background-color: white;
+    height: 100%;
+    width: 480px;
+    padding-bottom: 180px; 
+    padding-top: 150px;
+}
+
+.banner {
+   
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: auto;
+    border: solid  5px;
+   
+}
+
 
 .hero-text h1 {
     text-align: center;
-  position: relative;
+    position: relative;
     color: white; 
-  
-     
 }
 
 
@@ -96,7 +113,7 @@ font-family: 'Niramit', sans-serif;
 h2 {
 
   color: black;
-  font-size: 30px;
+  font-size: 40px;
     font-style: oblique;
  font-weight: 100; 
   line-height: 1px;
@@ -138,7 +155,8 @@ a:hover {
 
 
 footer {
-    font-size: 1.5em; 
+    font-size: 15px; 
+    font-style: italic;
     color: grey;
     text-align: center;
     bottom: 0;
