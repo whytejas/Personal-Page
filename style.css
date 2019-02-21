@@ -1,12 +1,15 @@
 body {
-  background-color: white;
-  font-family: 'Niramit', sans-serif;
+    
+    background-color: white;
+ 
+font-family: 'Alegreya', serif;
     height: 100%;
+    
 }
 
 .navigation {
  
-font-family: 'niramit'; 
+font-family: 'Permanent Marker', cursive;
 
     font-size: 1.5rem; 
     text-align: center;
@@ -58,7 +61,7 @@ display: inline-block;
 #index .banner {
     
     background-image:
-    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/hero-img.png");
+    radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("/hero-img.png");
       background-color: white;
      height: 100%;
     width: 480px;
@@ -70,7 +73,7 @@ display: inline-block;
 #books .banner {
     
     background-image:
-    radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/books.png");
+    radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("/books.png");
      background-color: white;
     height: 100%;
     width: 480px;
@@ -86,8 +89,8 @@ display: inline-block;
     background-repeat: no-repeat;
     position: relative;
     margin: auto;
-    border: solid  5px;
-   
+    border: solid  1px;
+   border-radius: 5%;
 }
 
 
@@ -100,12 +103,11 @@ display: inline-block;
 
 h1 {
   color: white;
-  font-size: 80px;
-  font-weight: 600;
-font-family: 'Niramit', sans-serif;
-    text-align:center;
+  font-size: 60px;
+  letter-spacing: px ;
+font-family: 'Permanent Marker', cursive;
     line-height: 100px;
-    margin-bottom: auto
+    
     
 }
 
@@ -114,8 +116,9 @@ h2 {
 
   color: black;
   font-size: 40px;
-    font-style: oblique;
- font-weight: 100; 
+  font-style: oblique;
+ font-weight: 100;
+    font-family: 'Permanent Marker', cursive;
   line-height: 1px;
   text-align: center;
     padding: 10px;
@@ -133,11 +136,12 @@ h3 {
 
 p {
   color: black;
-  font-size: 1.3em;
+  font-size: 25px;
   line-height: 1.5em;
   margin-top: 10px;
   padding: 10px 20px;
 text-align: center;
+font-family: 'Alegreya', serif;
  
 }
 
@@ -155,10 +159,56 @@ a:hover {
 
 
 footer {
-    font-size: 15px; 
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 20px; 
     font-style: italic;
     color: grey;
     text-align: center;
     bottom: 0;
     position: relative;
+    letter-spacing: 1px;
+    padding: 2px; 
+    margin: auto; 
+    text-transform: lowercase;
+}
+
+#socialmedia {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    
+    margin-bottom: 10px;
+    
+  justify-content: space-around;
+    
+  font-size: 40px;
+
+  
+  text-decoration: none;
+  
+}
+
+.fa {
+    
+    padding: 5px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+    border-radius: 90%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: purple;
+  color: white;
+ 
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
 }
