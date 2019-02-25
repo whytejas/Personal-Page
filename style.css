@@ -1,214 +1,195 @@
 body {
-    
     background-color: white;
- 
-font-family: 'Alegreya', serif;
-    height: 100%;
+    font-family: 'Alegreya', serif;
+      
     
+    display: grid;
+    grid-template-rows: 50px auto auto 110px 40px;
+    grid-row-gap: 10px; 
+    grid-template-areas: "navigation"
+        "banner"
+        "intro"
+        "socialmedia"
+        "footer"; 
+ 
 }
 
 .navigation {
- 
-font-family: 'Permanent Marker', cursive;
-
-    font-size: 1.5rem; 
-    text-align: center;
-  padding: 0;
-  margin: 0;
-    position: relative;
-     width: 100%; 
-    top: 0;
    
-    
+ grid-area: navigation;
+
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   
+    width: 100%;
+    top: 0; 
 }
 .navigation ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-display: inline-block;
-
-
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
 }
 
 .navigation li {
-  list-style: none;
-  float:left;
-  letter-spacing: 2px;
-  padding: 10px;
-  margin-right: 50px;
-  
-
-    
+    list-style: none;
+    float:left;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-right: 50px;  
 }
 
 .navigation li a {
     color: black;
-     text-shadow: 0 2px 1px rgba(0,10,0,0.1);
+    text-shadow: 0 2px 1px rgba(0, 10, 0, 0.1);
     display: block;
     text-decoration: none;
-       
 }
 
 .navigation li a:hover {
     color: dimgrey;
     margin-top: 2px;
-   margin-left: 2px; 
+    margin-left: 2px;
     text-shadow: none;
 }
 
-
-#index .banner {
-    
-    background-image:
-    radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("/hero-img.png");
-      background-color: white;
-     height: 100%;
-    width: 480px;
-    padding-bottom: 200px; 
-    padding-top: 200px;
-}
-
-
-#books .banner {
-    
-    background-image:
-    radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0)), url("/books.png");
-     background-color: white;
-    height: 100%;
-    width: 480px;
-    padding-bottom: 180px; 
-    padding-top: 150px;
-}
-
 .banner {
-   
+    grid-area: banner;
+   width: 100%;
+    position: relative;
     text-align: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     margin: auto;
-    border: solid  1px;
-   border-radius: 5%;
+    
+   
+   
+}
+
+.banner img {
+    border-radius: 18%;
+     opacity: 0.8;
+    
+}
+
+.intro {
+  grid-area: intro;
 }
 
 
-.hero-text h1 {
-    text-align: center;
-    position: relative;
-    color: white; 
-}
 
-
-h1 {
-  color: white;
-  font-size: 60px;
-  letter-spacing: px ;
-font-family: 'Permanent Marker', cursive;
+.banner h1 {
+   
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    opacity: 1.0;
+    color: white;
+    font-size: 60px;
+    letter-spacing: px;
+    font-family: 'Permanent Marker', cursive;
     line-height: 100px;
-    
-    
 }
+
+
 
 
 h2 {
-
-  color: black;
-  font-size: 40px;
-  font-style: oblique;
- font-weight: 100;
+    color: black;
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: 100;
     font-family: 'Permanent Marker', cursive;
-  line-height: 1px;
-  text-align: center;
+    line-height: 1px;
+    text-align: center;
     padding: 10px;
 }
 
 h3 {
-  color: black;
-  font-size: 2em;
-  font-weight: 500;
- margin-left: 20px;
-
-
-    
+    color: black;
+    font-size: 2em;
+    font-weight: 500;
+    margin-left: 20px;
 }
+
+
+
 
 p {
-  color: black;
-  font-size: 25px;
-  line-height: 1.5em;
-  margin-top: 10px;
-  padding: 10px 20px;
-text-align: center;
-font-family: 'Alegreya', serif;
- 
-}
-
-footer a {
-    text-decoration: none;
-    color: grey; 
-    font-weight:800;
-}
-
-a:hover {
-    text-decoration: none;
-    color: darkgreen; 
-    font-weight:800;
-}
-
-
-footer {
-    font-family: 'Permanent Marker', cursive; 
-    font-size: 20px; 
-    font-style: italic;
-    color: grey;
+    color: black;
+    font-size: 25px;
+    line-height: 1.5em;
+    margin-top: 10px;
+    padding: 10px 20px;
     text-align: center;
-    bottom: 0;
-    position: relative;
-    letter-spacing: 1px;
-    padding: 2px; 
-    margin: auto; 
-    text-transform: lowercase;
+    font-family: 'Alegreya', serif;
+
 }
 
-#socialmedia {
+
+
+.socialmedia {
+  grid-area: socialmedia;
     display: flex;
     padding: 10px;
-    margin: 0;
-    
+    margin: 10;
     margin-bottom: 10px;
-    
-  justify-content: space-around;
-    
-  font-size: 40px;
-
-  
-  text-decoration: none;
-  
+    justify-content: space-around;
+    font-size: 40px;
+    text-decoration: none;
 }
 
 .fa {
-    
-    padding: 5px;
-  font-size: 30px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 90%;
 }
+
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .fa-instagram {
-  background: purple;
-  color: white;
- 
+    background: purple;
+    color: white;
 }
 
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
+
+
+
+
+
+footer {
+     grid-area: footer;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    font-style: italic;
+    color: grey;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    padding: 2px;
+    margin: auto;
+    text-transform: lowercase;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 800;
+}
+
