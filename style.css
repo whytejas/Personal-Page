@@ -1,8 +1,6 @@
 body {
     background-color: white;
-    font-family: 'Alegreya', serif;
-      
-    
+    font-family: 'Alegreya', serif;      
     display: grid;
     grid-template-rows: 50px auto auto 110px 40px;
     grid-row-gap: 10px; 
@@ -11,22 +9,21 @@ body {
         "intro"
         "socialmedia"
         "footer"; 
- 
 }
 
 .navigation {
    
- grid-area: navigation;
-
+    grid-area: navigation;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5rem;
     text-align: center;
     padding: 0;
     margin: 0;
-  
     width: 100%;
     top: 0; 
 }
+
+
 .navigation ul {
     margin: 0;
     padding: 0;
@@ -58,7 +55,6 @@ body {
 
 .banner {
     grid-area: banner;
-   width: 100%;
     position: relative;
     text-align: center;
     background-position: center;
@@ -72,15 +68,20 @@ body {
 
 .banner img {
     border-radius: 18%;
-     opacity: 0.8;
+    opacity: 0.8;
     
 }
 
 .intro {
-  grid-area: intro;
+    grid-area: intro;
+    text-align: center;
 }
 
-
+.intro img {
+    border-radius: 10%;
+ 
+    
+}
 
 .banner h1 {
    
@@ -134,7 +135,7 @@ p {
 
 
 .socialmedia {
-  grid-area: socialmedia;
+    grid-area: socialmedia;
     display: flex;
     padding: 10px;
     margin: 10;
@@ -174,7 +175,7 @@ p {
 
 
 footer {
-     grid-area: footer;
+    grid-area: footer;
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     font-style: italic;
