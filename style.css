@@ -3,8 +3,9 @@ body {
     font-family: 'Alegreya', serif;      
     display: grid;
     grid-template-rows: 50px auto auto 110px 40px;
+   
     grid-row-gap: 10px; 
-    grid-template-areas: "navigation"
+    grid-template-areas: "navigation" 
         "banner"
         "intro"
         "socialmedia"
@@ -75,8 +76,18 @@ body {
 .intro {
     grid-area: intro;
     text-align: center;
+    display:grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto 50%;
+  
+}
+.intro div {
+    background-color: rgba(176,224,230, 0.2);
 }
 
+.intro div:nth-child(odd) {
+    background-color: rgba(255,248,220, 0.4);
+}
 .intro img {
     border-radius: 10%;
  
