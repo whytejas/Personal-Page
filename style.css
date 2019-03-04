@@ -77,12 +77,17 @@ body {
     grid-area: intro;
     text-align: center;
     display:grid;
-    grid-column-gap: 10px;
-    grid-template-columns: auto 50%;
+    grid-column-gap: 1em;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+   
+    
+
   
 }
 .intro div {
     background-color: rgba(176,224,230, 0.2);
+    padding: 2em;
 }
 
 .intro div:nth-child(odd) {
